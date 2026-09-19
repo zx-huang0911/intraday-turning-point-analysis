@@ -2,11 +2,36 @@
 
 [![Python checks](https://github.com/zx-huang0911/intraday-turning-point-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/zx-huang0911/intraday-turning-point-analysis/actions/workflows/ci.yml)
 
-A reproducible, window-based exploration of intraday turning-point hypotheses in Chinese A-share data. Originating from a behavioral finance course project, it turns minute OHLCV inputs into daily scores, window comparisons and a portable offline report.
+A behavioral finance course project on intraday price reversals in Chinese A-shares. We compare predefined morning and afternoon windows with control windows, then inspect individual days alongside their surrounding daily price bars. Zixin Huang led topic selection, the main implementation and visualization.
 
-[中文](README.md) · [Method specification](docs/methodology.md) · [Data policy](docs/data-card.md) · [Validation](docs/validation.md)
+[中文](README.md) · [Research report (Chinese PDF)](docs/reports/intraday-turning-point-report.pdf) · [Method](docs/methodology.md) · [Report/code differences](docs/reports/README.md)
 
-![Offline report generated with synthetic data](docs/assets/report-preview.png)
+## Study and examples
+
+The score measures a window's highest close-price return relative to a daily baseline, normalized by the day's price range. Two weights describe short-term momentum and the surrounding daily highs and lows.
+
+![Figure 1 from the research report](docs/assets/course/report-figure-1.png)
+
+*Figure 1, extracted from page 4 of the report: an annotated chart for 600249 on 2025-09-10. This illustration is separate from the 2020 sample below.*
+
+| Window group | Morning | Afternoon |
+| --- | --- | --- |
+| Primary | 10:15–10:45 | 13:40–14:00 |
+| Control | 11:00–11:30 | 13:00–13:20 |
+
+![Original intraday chart for 000554 on 2020-04-08](docs/assets/course/000554_2020-04-08_intraday.png)
+
+*Original price and volume plot from the course project's `fast_test/typical_cases` output. Shaded areas mark the primary windows.*
+
+![Original daily candlestick chart around 2020-04-08](docs/assets/course/000554_2020-04-08_kline.png)
+
+*The same case in daily context. The dashed line marks 2020-04-08. Both PNGs are copied without modification.*
+
+| Symbol | Date | Base score | gamma | theta | Weighted score |
+| --- | --- | ---: | ---: | ---: | ---: |
+| 000554 | 2020-04-08 | 0.5240 | 30.0000 | 23.8462 | 28.2127 |
+
+Values are from the original `typical_cases_list.csv`, rounded to four decimals. This is a selected high-score case, not a representative sample. The retrospective theta uses future lows. The [Chinese README](README.md) also transcribes the report's ten-symbol comparison table as a Markdown table; the report's summary means do not match its displayed rows, as detailed in the [report notes](docs/reports/README.md).
 
 ## Run locally
 
@@ -54,4 +79,4 @@ ruff check src tests scripts
 
 Zixin Huang (黄子欣) led topic selection, principal implementation and visualizations in the original course project. Acknowledgments: 史一诺, 韩鎔旭 and 张钰浛; see [AUTHORS.md](AUTHORS.md).
 
-Original software, documentation and synthetic examples: [MIT](LICENSE). Third-party market data are **not** included or relicensed. Use your own authorized inputs; see the [data card](docs/data-card.md).
+Software, project documentation and synthetic examples: [MIT](LICENSE). The archived report and historical figures are supplied as course materials; rights in third-party market content and software screenshots are not relicensed under MIT. Raw market datasets are not included. See the [data card](docs/data-card.md).

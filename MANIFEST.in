@@ -2,7 +2,7 @@ include LICENSE *.md *.cff requirements-dev.lock
 recursive-include src/intraday_turning_point/templates *.html
 recursive-include tests *.py
 recursive-include scripts *.py
-recursive-include docs *.md *.json *.png *.svg
+recursive-include docs *.md *.json *.png *.svg *.pdf
 recursive-include examples/report *.html *.csv *.json *.svg *.png
 include .github/workflows/ci.yml
 prune .local

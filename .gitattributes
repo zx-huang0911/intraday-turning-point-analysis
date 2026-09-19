@@ -7,3 +7,4 @@
 *.png binary
 *.svg -whitespace
 examples/report/** linguist-generated=true
+*.pdf binary

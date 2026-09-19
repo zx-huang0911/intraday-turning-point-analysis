@@ -1,0 +1,26 @@
+[
+  {
+    "file": "docs/assets/course/000554_2020-04-08_intraday.png",
+    "source": "v3.0/output/output_data/fast_test/typical_cases/000554_2020-04-08_intraday.png",
+    "sha256": "26d289b39ac8064339292275e0889e889054081706e98225fd48110eeb5667ca",
+    "bytes": 309652
+  },
+  {
+    "file": "docs/assets/course/000554_2020-04-08_kline.png",
+    "source": "v3.0/output/output_data/fast_test/typical_cases/000554_2020-04-08_kline.png",
+    "sha256": "b34b350f1694809479430112071784cb82e2a8cb4f7ab8b117d3534274bc512b",
+    "bytes": 204253
+  },
+  {
+    "file": "docs/assets/course/report-figure-1.png",
+    "source": "PDF page 4, figure 1; embedded image extracted with pdfimages -png",
+    "sha256": "6dd0ab24bee765a1fe5d5bc98de8efb67879635fbe353010a64b772bcc667e48",
+    "bytes": 1113822
+  },
+  {
+    "file": "docs/reports/intraday-turning-point-report.pdf",
+    "source": "Intraday_turning_point (8).pdf; author-supplied original",
+    "sha256": "d152b12c416494781b053b43846d1a0ea61fe7c55dc61d99dfe5e1b970309c66",
+    "bytes": 2505721
+  }
+]

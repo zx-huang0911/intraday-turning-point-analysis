@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 authors = [{name = "Zixin Huang"}]
 license = "MIT"
-license-files = ["LICENSE"]
+license-files = ["LICENSE", "NOTICE.md"]
 dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<3", "matplotlib>=3.8,<4"]
 
 [project.urls]

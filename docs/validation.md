@@ -35,7 +35,7 @@ itp demo --out output/reproduced
 
 使用 `compute_daily_detailed_metrics` 与新版 `retrospective` 对照：基础阈值 0.4、回看 10 行、前后 5 个观测日，比较两个窗口组的全部逐日得分。最大绝对差异为 **1.1724 × 10⁻¹³**，处于浮点舍入量级。输入与原算法文件的 SHA-256、逐标的质量和误差见[机器可读记录](evidence/legacy-comparison.json)。
 
-两种模式也都完成了上述真实数据的完整 CLI 流程，均记录 8 个接受标的和 2 个排除标的；真实报告只保存在本地 `.local/real-retrospective/` 和 `.local/real-asof/`，没有把含价格数据的 HTML 或图表加入公开包。
+两种模式也都完成了上述真实数据的完整 CLI 流程，均记录 8 个接受标的和 2 个排除标的；真实报告只保存在本地 `.local/real-retrospective/` 和 `.local/real-asof/`，这些新运行的真实数据 HTML 和图表未加入公开包；README 单独展示的是原课程输出图。
 
 拥有受信任的原算法和有权使用的历史行情时，可以重跑：
 
@@ -48,11 +48,11 @@ python scripts/compare_legacy.py \
 
 该脚本会执行指定的原 Python 文件，仅应使用可信本地代码。公开仓库未捆绑原算法压缩包与真实行情，因此**历史对照摘要不能在没有原始材料时独立复核**；公开合成演示、测试和浏览器脚本没有这个依赖。
 
-## 可視化证据范围
+## 图表与报告来源
 
-- `docs/assets/report-preview.png` 是合成演示的真实浏览器截图，未用生成图代替运行结果。
+- README 展示原课程的两张案例 PNG 和从研究报告第 4 页提取的图 1；不再以演示界面截图作为项目主图。
 - `examples/report/` 包含同一次演示的输入、CSV、HTML、SVG/PNG 与哈希清单；可以逐项核对。
-- 原课程案例图片本地留档并记录哈希，阅读过原始分时图；没有声称旧 PNG 与新版逐像素一致。
+- 两张案例 PNG 与提供目录中的原文件逐字节一致；研究报告 PDF 与作者提供的原件逐字节一致。来源、提取方法与哈希见 [course-materials.json](evidence/course-materials.json)。
 - 最高分案例属于事后挑选，仅用于解释；README 图像不是盈利证据。
 
 ## 尚未验证
