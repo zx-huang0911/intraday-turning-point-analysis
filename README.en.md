@@ -1,5 +1,7 @@
 # Intraday Turning Point Analysis
 
+[![Python checks](https://github.com/zx-huang0911/intraday-turning-point-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/zx-huang0911/intraday-turning-point-analysis/actions/workflows/ci.yml)
+
 A reproducible, window-based exploration of intraday turning-point hypotheses in Chinese A-share data. Originating from a behavioral finance course project, it turns minute OHLCV inputs into daily scores, window comparisons and a portable offline report.
 
 [中文](README.md) · [Method specification](docs/methodology.md) · [Data policy](docs/data-card.md) · [Validation](docs/validation.md)
@@ -11,6 +13,8 @@ A reproducible, window-based exploration of intraday turning-point hypotheses in
 Python 3.11 or newer. From the repository root:
 
 ```bash
+git clone https://github.com/zx-huang0911/intraday-turning-point-analysis.git
+cd intraday-turning-point-analysis
 python -m venv .local/venv
 source .local/venv/bin/activate
 python -m pip install -e .

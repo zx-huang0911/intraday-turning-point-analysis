@@ -1,5 +1,7 @@
 # Intraday Turning Point Analysis
 
+[![Python checks](https://github.com/zx-huang0911/intraday-turning-point-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/zx-huang0911/intraday-turning-point-analysis/actions/workflows/ci.yml)
+
 **A 股分时转折假设的可复现分析工具。** 从分钟 OHLCV 出发，比较固定窗口、解释典型案例，并导出逐日得分与离线交互报告。
 
 [English](README.en.md) · [方法定义](docs/methodology.md) · [数据说明](docs/data-card.md) · [验证记录](docs/validation.md) · [贡献与致谢](AUTHORS.md)
@@ -24,6 +26,8 @@
 Python 3.11+；建议使用独立环境。在仓库根目录执行：
 
 ```bash
+git clone https://github.com/zx-huang0911/intraday-turning-point-analysis.git
+cd intraday-turning-point-analysis
 python -m venv .local/venv
 source .local/venv/bin/activate
 python -m pip install -e .

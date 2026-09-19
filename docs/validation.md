@@ -8,7 +8,7 @@
 - Ruff 静态检查与格式检查通过。
 - 构建 sdist 与 wheel；在第二个独立环境按带哈希的依赖快照安装，再安装 wheel 并执行测试和 `asof_close` 合成演示。报告模板随 wheel 打包。
 - Chromium 桌面 1440×1100、手机 390×844 检查通过：标签切换、标的选择、悬停价格、质量表、键盘切换、可见下载目标、页面无横向溢出；没有 JavaScript 异常或外部资源请求。见[浏览器记录](evidence/browser-check.json)。
-- GitHub Actions 配置含 Python 3.11 / 3.12，但本地实际验证的是 **Python 3.12.12 / Linux**。远端 CI 尚需在仓库推送后运行，不能用本地结果代替其状态。
+- GitHub Actions 已在 **Python 3.11 / 3.12、Ubuntu** 上通过测试、Ruff 检查、安装包构建与演示生成；[首次公开版本的运行记录](https://github.com/zx-huang0911/intraday-turning-point-analysis/actions/runs/35421923152) 对应代码提交 `d2ec998`。本地实际验证环境为 **Python 3.12.12 / Linux**，后续状态以仓库 Actions 为准。
 
 环境：NumPy 2.5.3、pandas 2.3.3、Matplotlib 3.11.2、pytest 9.1.1、Ruff 0.16.8；完整依赖见 `requirements-dev.lock`。浏览器仅用于开发验证，运行项目无需 Playwright。
 
