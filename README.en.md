@@ -2,7 +2,7 @@
 
 [![Python checks](https://github.com/zx-huang0911/intraday-turning-point-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/zx-huang0911/intraday-turning-point-analysis/actions/workflows/ci.yml)
 
-A behavioral finance course project on intraday price reversals in Chinese A-shares. We compare predefined morning and afternoon windows with control windows, then inspect individual days alongside their surrounding daily price bars. Zixin Huang led topic selection, the main implementation and visualization.
+A behavioral finance course project on intraday price reversals in Chinese A-shares. We compare predefined morning and afternoon windows with control windows, then inspect individual days alongside their surrounding daily price bars.
 
 [中文](README.md) · [Research report (Chinese PDF)](docs/reports/intraday-turning-point-report.pdf) · [Method](docs/methodology.md) · [Report/code differences](docs/reports/README.md)
 
@@ -77,6 +77,6 @@ ruff check src tests scripts
 
 ## Attribution and license
 
-Zixin Huang (黄子欣) led topic selection, principal implementation and visualizations in the original course project. Acknowledgments: 史一诺, 韩鎔旭 and 张钰浛; see [AUTHORS.md](AUTHORS.md).
+Zixin Huang (黄子欣). Thanks to 史一诺, 韩鎔旭 and 张钰浛 for their collaboration on the course project. See [AUTHORS.md](AUTHORS.md) for individual contributions.
 
 Software, project documentation and synthetic examples: [MIT](LICENSE). The archived report and historical figures are supplied as course materials; rights in third-party market content and software screenshots are not relicensed under MIT. Raw market datasets are not included. See the [data card](docs/data-card.md).
