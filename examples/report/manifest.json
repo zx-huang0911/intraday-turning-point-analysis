@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "data_kind": "synthetic",
+  "config": {
+    "primary": [
+      {
+        "start": "10:15",
+        "end": "10:45"
+      },
+      {
+        "start": "13:40",
+        "end": "14:00"
+      }
+    ],
+    "control": [
+      {
+        "start": "11:00",
+        "end": "11:30"
+      },
+      {
+        "start": "13:00",
+        "end": "13:20"
+      }
+    ],
+    "mode": "retrospective",
+    "base_threshold": 0.4,
+    "event_threshold": 8.0,
+    "lookback": 15,
+    "context_days": 5
+  },
+  "event_horizon_observed_sessions": null,
+  "software": {
+    "intraday-turning-point": "0.1.0",
+    "numpy": "2.5.3",
+    "pandas": "2.3.3",
+    "matplotlib": "3.11.2"
+  },
+  "python": "3.12.12",
+  "inputs": [
+    {
+      "symbol": "DEMO_A",
+      "file": "DEMO_A.csv",
+      "sha256": "d8021f6e5510747f45a3caf97ff8e5fbbe1f3c6ba5f8316c94d14d4ee9f63dcf",
+      "bytes": 360866
+    },
+    {
+      "symbol": "DEMO_B",
+      "file": "DEMO_B.csv",
+      "sha256": "a231693df113af8d6838744194313175fec3fa65b97bbf96d134b71778ce9095",
+      "bytes": 373913
+    }
+  ],
+  "quality": [
+    {
+      "symbol": "DEMO_A",
+      "status": "accepted",
+      "rows": 5760,
+      "days": 24,
+      "first": "2024-01-02 09:31:00",
+      "last": "2024-02-02 15:00:00",
+      "min_bars_per_day": 240,
+      "max_bars_per_day": 240,
+      "days_not_240_bars": 0,
+      "zero_volume_bars": 0,
+      "note": "240 is a diagnostic reference, not a completeness guarantee; calendar not inferred."
+    },
+    {
+      "symbol": "DEMO_B",
+      "status": "accepted",
+      "rows": 5760,
+      "days": 24,
+      "first": "2024-01-02 09:31:00",
+      "last": "2024-02-02 15:00:00",
+      "min_bars_per_day": 240,
+      "max_bars_per_day": 240,
+      "days_not_240_bars": 0,
+      "zero_volume_bars": 0,
+      "note": "240 is a diagnostic reference, not a completeness guarantee; calendar not inferred."
+    }
+  ],
+  "policy": {
+    "invalid_symbols": "fail",
+    "missing_windows": "NaN; excluded from valid-day denominator",
+    "case_selection": "Highest primary score per symbol; selected after analysis",
+    "return_interpretation": "Forward labels only; no strategy or portfolio returns"
+  },
+  "outputs": {
+    "daily_scores.csv": "9a57e47b2d5d46212d89a961db57a9131091e0775b66a8ef9a6ff9e837ad4d50",
+    "index.html": "6cddadecfb031a097f12d29f6f03be99963497e57d24139bd36fe0f4a054cbf5",
+    "selected_case.png": "53ad52731c5d4edf61756fb8643f4bf5ca29e5019b01e42f65bbd20efa39b8f0",
+    "selected_case.svg": "466af76208a3e4a651b019af0ac1e176371e9efa153b63ba23de7ae617ca0172",
+    "summary.csv": "d251afe9226a6e96c9d05cf01fbc6a477ec96e219218a3eabca1446a601a6a4b",
+    "synthetic_inputs/DEMO_A.csv": "d8021f6e5510747f45a3caf97ff8e5fbbe1f3c6ba5f8316c94d14d4ee9f63dcf",
+    "synthetic_inputs/DEMO_B.csv": "a231693df113af8d6838744194313175fec3fa65b97bbf96d134b71778ce9095",
+    "window_comparison.png": "83c30e28f2f9d39cef194134bf26f6be086e3f7e14efcfef2b34f5f38ec2b323",
+    "window_comparison.svg": "bf8de2bc2115c7b0c22fe291cae0b783089bc23c12d6f6610641cf0bf774aedc"
+  }
+}

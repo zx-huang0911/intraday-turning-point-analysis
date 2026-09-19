@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "intraday-turning-point"
+version = "0.1.0"
+description = "Reproducible window-based analysis of intraday turning-point hypotheses"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "Zixin Huang"}]
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<3", "matplotlib>=3.8,<4"]
+
+[project.urls]
+Repository = "https://github.com/zx-huang0911/intraday-turning-point-analysis"
+Issues = "https://github.com/zx-huang0911/intraday-turning-point-analysis/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1", "build>=1,<2"]
+
+[project.scripts]
+itp = "intraday_turning_point.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+intraday_turning_point = ["templates/*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

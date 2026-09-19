@@ -1,0 +1,17 @@
+{
+  "browser": "150.0.7871.114",
+  "desktop": "1440x1100",
+  "mobile": "390x844",
+  "checks": [
+    "tabs",
+    "symbol selection",
+    "hover",
+    "quality table",
+    "mobile overflow",
+    "keyboard tabs",
+    "visible downloads",
+    "offline assets"
+  ],
+  "errors": [],
+  "external_requests": []
+}

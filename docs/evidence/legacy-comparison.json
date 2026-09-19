@@ -1,0 +1,215 @@
+{
+  "config": {
+    "primary": [
+      {
+        "start": "10:15",
+        "end": "10:45"
+      },
+      {
+        "start": "13:40",
+        "end": "14:00"
+      }
+    ],
+    "control": [
+      {
+        "start": "11:00",
+        "end": "11:30"
+      },
+      {
+        "start": "13:00",
+        "end": "13:20"
+      }
+    ],
+    "mode": "retrospective",
+    "base_threshold": 0.4,
+    "event_threshold": 8.0,
+    "lookback": 10,
+    "context_days": 5
+  },
+  "legacy_metrics_sha256": "46f9e4910bd1dbe0c693b60fe1fc2bb888414688720ef810b49f808010c9a613",
+  "comparison": "primary/control daily scores; no half-hour segments or backtests",
+  "records": [
+    {
+      "symbol": "000554",
+      "inputs": [
+        {
+          "file": "000554_2020.csv",
+          "sha256": "9d29c2a77d182dfb692f1b0a67fc20cf958f8e4be7bf2d37b42f8df7dd4586ec"
+        }
+      ],
+      "status": "accepted",
+      "rows": 58320,
+      "days": 243,
+      "first": "2020-01-02 09:31:00",
+      "last": "2020-12-31 15:00:00",
+      "min_bars_per_day": 240,
+      "max_bars_per_day": 240,
+      "days_not_240_bars": 0,
+      "zero_volume_bars": 2036,
+      "note": "240 is a diagnostic reference, not a completeness guarantee; calendar not inferred.",
+      "legacy_max_absolute_score_difference": 8.704148513061227e-14
+    },
+    {
+      "symbol": "002639",
+      "inputs": [
+        {
+          "file": "002639_2020.csv",
+          "sha256": "d8a020462acd9f26ed9b3cf7ef635b00d9ab738df62d237518f3f01498d608af"
+        }
+      ],
+      "status": "accepted",
+      "rows": 58320,
+      "days": 243,
+      "first": "2020-01-02 09:31:00",
+      "last": "2020-12-31 15:00:00",
+      "min_bars_per_day": 240,
+      "max_bars_per_day": 240,
+      "days_not_240_bars": 0,
+      "zero_volume_bars": 616,
+      "note": "240 is a diagnostic reference, not a completeness guarantee; calendar not inferred.",
+      "legacy_max_absolute_score_difference": 1.1723955140041653e-13
+    },
+    {
+      "symbol": "002641",
+      "inputs": [
+        {
+          "file": "002641_2020.csv",
+          "sha256": "8c52ef1115f2c5e559f843be1316d1a3c3970da73f9d2f26ba9b11a3006a321a"
+        }
+      ],
+      "status": "accepted",
+      "rows": 58320,
+      "days": 243,
+      "first": "2020-01-02 09:31:00",
+      "last": "2020-12-31 15:00:00",
+      "min_bars_per_day": 240,
+      "max_bars_per_day": 240,
+      "days_not_240_bars": 0,
+      "zero_volume_bars": 570,
+      "note": "240 is a diagnostic reference, not a completeness guarantee; calendar not inferred.",
+      "legacy_max_absolute_score_difference": 5.861977570020827e-14
+    },
+    {
+      "symbol": "002642",
+      "inputs": [
+        {
+          "file": "002642_2020.csv",
+          "sha256": "8ad83692658169770dd028f22dc99b98cd58a27c9a8d7fed9328ef64235c0730"
+        }
+      ],
+      "status": "rejected",
+      "reason": "Prices must be positive"
+    },
+    {
+      "symbol": "002643",
+      "inputs": [
+        {
+          "file": "002643_2020.csv",
+          "sha256": "187695718fae98b57e56243bd94cad9b9a589689e324859cfec28fcc94cc70de"
+        }
+      ],
+      "status": "accepted",
+      "rows": 58320,
+      "days": 243,
+      "first": "2020-01-02 09:31:00",
+      "last": "2020-12-31 15:00:00",
+      "min_bars_per_day": 240,
+      "max_bars_per_day": 240,
+      "days_not_240_bars": 0,
+      "zero_volume_bars": 373,
+      "note": "240 is a diagnostic reference, not a completeness guarantee; calendar not inferred.",
+      "legacy_max_absolute_score_difference": 6.217248937900877e-14
+    },
+    {
+      "symbol": "002644",
+      "inputs": [
+        {
+          "file": "002644_2020.csv",
+          "sha256": "b44c4e70784b551e9bbb0506588655843a29091eb61ad16ee3fece0458fec7d8"
+        }
+      ],
+      "status": "accepted",
+      "rows": 58320,
+      "days": 243,
+      "first": "2020-01-02 09:31:00",
+      "last": "2020-12-31 15:00:00",
+      "min_bars_per_day": 240,
+      "max_bars_per_day": 240,
+      "days_not_240_bars": 0,
+      "zero_volume_bars": 2843,
+      "note": "240 is a diagnostic reference, not a completeness guarantee; calendar not inferred.",
+      "legacy_max_absolute_score_difference": 4.618527782440651e-14
+    },
+    {
+      "symbol": "002645",
+      "inputs": [
+        {
+          "file": "002645_2020.csv",
+          "sha256": "a9eeb924b75165580591100514a6b85832fcc4c44f58736baa764de8bd5593f9"
+        }
+      ],
+      "status": "rejected",
+      "reason": "Prices must be positive"
+    },
+    {
+      "symbol": "002646",
+      "inputs": [
+        {
+          "file": "002646_2020.csv",
+          "sha256": "6a8428cdc2cc1eb3edface2cd2f882faa1de2ab62fea92e8e5ac392cba0d2d54"
+        }
+      ],
+      "status": "accepted",
+      "rows": 58320,
+      "days": 243,
+      "first": "2020-01-02 09:31:00",
+      "last": "2020-12-31 15:00:00",
+      "min_bars_per_day": 240,
+      "max_bars_per_day": 240,
+      "days_not_240_bars": 0,
+      "zero_volume_bars": 2847,
+      "note": "240 is a diagnostic reference, not a completeness guarantee; calendar not inferred.",
+      "legacy_max_absolute_score_difference": 1.0835776720341528e-13
+    },
+    {
+      "symbol": "002647",
+      "inputs": [
+        {
+          "file": "002647_2020.csv",
+          "sha256": "7c2695978d35f3ff05b20ef5faee984516d4744f2f8af1bd476cf2db74f4002a"
+        }
+      ],
+      "status": "accepted",
+      "rows": 58320,
+      "days": 243,
+      "first": "2020-01-02 09:31:00",
+      "last": "2020-12-31 15:00:00",
+      "min_bars_per_day": 240,
+      "max_bars_per_day": 240,
+      "days_not_240_bars": 0,
+      "zero_volume_bars": 1688,
+      "note": "240 is a diagnostic reference, not a completeness guarantee; calendar not inferred.",
+      "legacy_max_absolute_score_difference": 7.105427357601002e-14
+    },
+    {
+      "symbol": "002648",
+      "inputs": [
+        {
+          "file": "002648_2020.csv",
+          "sha256": "ea52e801580d851a214570e9b0bb51a6467ce71ba84542520f23e7c2aeec7d80"
+        }
+      ],
+      "status": "accepted",
+      "rows": 58320,
+      "days": 243,
+      "first": "2020-01-02 09:31:00",
+      "last": "2020-12-31 15:00:00",
+      "min_bars_per_day": 240,
+      "max_bars_per_day": 240,
+      "days_not_240_bars": 0,
+      "zero_volume_bars": 404,
+      "note": "240 is a diagnostic reference, not a completeness guarantee; calendar not inferred.",
+      "legacy_max_absolute_score_difference": 5.684341886080802e-14
+    }
+  ]
+}

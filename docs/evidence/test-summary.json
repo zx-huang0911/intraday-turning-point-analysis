@@ -1,0 +1,9 @@
+{
+  "tests": "28",
+  "failures": "0",
+  "errors": "0",
+  "skipped": "0",
+  "python": "3.12.12",
+  "installation": "wheel installed in an independent environment",
+  "test_scope": "See tests/ and docs/validation.md; no claim of financial predictive validity"
+}

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite this repository and the version or commit used."
+title: "Intraday Turning Point Analysis: Reproducible Window-Based Research"
+type: software
+authors:
+  - family-names: Huang
+    given-names: Zixin
+version: 0.1.0
+date-released: 2026-09-19
+license: MIT
+abstract: "A behavioral-finance course project organized into reproducible intraday window scoring, synthetic examples, and offline reports."
+repository-code: "https://github.com/zx-huang0911/intraday-turning-point-analysis"
